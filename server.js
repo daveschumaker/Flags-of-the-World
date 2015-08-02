@@ -6,7 +6,7 @@
 var express = require('express');
 
 // Setup default environment
-var env = process.env.NODE_ENV = process.end.NODE_ENV || 'development';
+var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 var app = express();
 
@@ -19,3 +19,8 @@ app.set('view engine', 'jade');
 app.get('*', function(req, res) {
   res.render('index');
 })
+
+// Initialize server
+var port = 3000;
+console.log('Server online and listening on port ' + port);
+app.listen(port);
