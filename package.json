@@ -12,6 +12,7 @@
     "body-parser": "^1.13.3",
     "express": "^4.13.2",
     "jade": "^1.11.0",
+    "mongoose": "^4.1.0",
     "morgan": "^1.6.1",
     "stylus": "^0.52.0"
   }

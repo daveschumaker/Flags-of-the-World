@@ -7,6 +7,7 @@ var express = require('express');
 var stylus = require('stylus');
 var morgan = require('morgan');
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
 
 // Setup default environment
 var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
