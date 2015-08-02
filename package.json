@@ -1,0 +1,15 @@
+{
+  "name": "flags",
+  "version": "0.0.1",
+  "description": "Flags of the World Quiz Game",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dave Schumaker",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.2",
+    "jade": "^1.11.0"
+  }
+}
