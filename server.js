@@ -30,6 +30,10 @@ app.use(stylus.middleware({
 }))
 app.use(express.static(__dirname + '/public'));
 
+app.get('/partials/:partialPath', function(req, res) {
+  res.render('partials/' + req.params.partialPath);
+});
+
 // Catch all route handler.
 // TODO: Build out specific routes that the server is aware of.
 app.get('*', function(req, res) {
