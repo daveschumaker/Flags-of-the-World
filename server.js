@@ -31,6 +31,13 @@ app.use(stylus.middleware({
 }))
 app.use(express.static(__dirname + '/public'));
 
+mongoose.connect('mongodb://localhost/flags');
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error!'));
+db.once('open', function callback() {
+  console.log('Database connection to flags is open...');
+})
+
 app.get('/partials/:partialPath', function(req, res) {
   res.render('partials/' + req.params.partialPath);
 });
