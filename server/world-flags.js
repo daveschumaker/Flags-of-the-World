@@ -302,6 +302,122 @@ var worldFlags = [
     country: 'Germany',
     flag_img: 'https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/gm-lgflag.gif'
   },
+  {
+    country: 'Ghana',
+    flag_img: 'https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/gh-lgflag.gif'
+  },
+  {
+    country: 'Gibraltar',
+    flag_img: 'https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/gi-lgflag.gif'
+  },
+  {
+    country: 'Greece',
+    flag_img: 'https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/gr-lgflag.gif'
+  },
+  {
+    country: 'Greenland',
+    flag_img: 'https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/gl-lgflag.gif'
+  },
+  {
+    country: 'Grenada',
+    flag_img: 'https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/gj-lgflag.gif'
+  },
+  {
+    country: 'Guam',
+    flag_img: 'https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/gq-lgflag.gif'
+  },
+  {
+    country: 'Guatemala',
+    flag_img: 'https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/gt-lgflag.gif'
+  },
+  {
+    country: 'Guernsey',
+    flag_img: 'https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/gk-lgflag.gif'
+  },
+  {
+    country: 'Guinea',
+    flag_img: 'https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/gv-lgflag.gif'
+  },
+  {
+    country: 'Guinea-Bissau',
+    flag_img: 'https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/pu-lgflag.gif'
+  },
+  {
+    country: 'Guyana',
+    flag_img: 'https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/gy-lgflag.gif'
+  },
+  {
+    country: 'Haiti',
+    flag_img: 'https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/ha-lgflag.gif'
+  },
+  {
+    country: 'Vatican City',
+    flag_img: 'https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/vt-lgflag.gif'
+  },
+  {
+    country: 'Honduras',
+    flag_img: 'https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/ho-lgflag.gif'
+  },
+  {
+    country: 'Hong Kong',
+    flag_img: 'https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/hk-lgflag.gif'
+  },
+  {
+    country: 'Hungary',
+    flag_img: 'https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/hu-lgflag.gif'
+  },
+  {
+    country: 'Iceland',
+    flag_img: 'https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/ic-lgflag.gif'
+  },
+  {
+    country: 'India',
+    flag_img: 'https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/in-lgflag.gif'
+  },
+  {
+    country: 'Indonesia',
+    flag_img: 'https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/id-lgflag.gif'
+  },
+  {
+    country: 'Iran',
+    flag_img: 'https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/ir-lgflag.gif'
+  },
+  {
+    country: 'Iraq',
+    flag_img: 'https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/iz-lgflag.gif'
+  },
+  {
+    country: 'Ireland',
+    flag_img: 'https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/ei-lgflag.gif'
+  },
+  {
+    country: 'Isle of Man',
+    flag_img: 'https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/im-lgflag.gif'
+  },
+  {
+    country: 'Isreal',
+    flag_img: 'https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/is-lgflag.gif'
+  },
+  {
+    country: 'Italy',
+    flag_img: 'https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/it-lgflag.gif'
+  },
+  {
+    country: 'Jamaica',
+    flag_img: 'https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/jm-lgflag.gif'
+  },
+  {
+    country: 'Japan',
+    flag_img: 'https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/ja-lgflag.gif'
+  },
+  {
+    country: 'Jersey',
+    flag_img: 'https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/je-lgflag.gif'
+  },
+  {
+    country: 'Jordan',
+    flag_img: 'https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/jo-lgflag.gif'
+  }
 ]
 
 /*
