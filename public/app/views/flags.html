@@ -1,9 +1,11 @@
 <h1>What country is this?</h1>
 
-<p>Score: {{data.score}}, Round: {{data.round}}</p>
+<p>Score: {{data.score}}, Round: {{data.round}} / 10</p>
 
-<img src="{{data.flag_img}}">
+<img src="{{data.flag_img}}" height="300">
 
 <div class="answers">
-  <p ng-repeat="answer in data.answers" ng-click="checkAnswer(answer)">{{ answer }}</p>
+  <p><strong>ANSWERS:</strong></p>
+  <span ng-repeat="answer in data.answers">
+  <a class="button button-primary" ng-click="checkAnswer(answer)">{{ answer }}</a></span>
 </div>
