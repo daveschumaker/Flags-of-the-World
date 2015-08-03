@@ -9,6 +9,10 @@ angular.module('flags', [
       templateUrl: 'app/views/flags.html',
       controller: 'FlagController',
     })
+    .when('/gameover', {
+      templateUrl: 'app/views/gameover.html',
+      // controller: 'GameOver',
+    })
     .otherwise({
       redirectTo: '/'
     });

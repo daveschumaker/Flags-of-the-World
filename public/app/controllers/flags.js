@@ -5,7 +5,7 @@ angular.module('flags.display', [])
   // Hold the data we receive from server.
   $scope.data = {
     score: 0,
-    round: 0,
+    round: 1,
     playedCountries: [],
     country: null,
     flag_img: null,
@@ -47,7 +47,12 @@ angular.module('flags.display', [])
     console.log('Played Countries', $scope.data.playedCountries);
     console.log('Score', $scope.data.score);
     console.log('Round', $scope.data.round);
-    $scope.getFlag();
+    if ($scope.data.round > 10) {
+      // TODO: Fix this routing
+      window.location = "#/gameover";
+    } else {
+      $scope.getFlag();
+    }
   }
 
   // Immediately invoke the function on page load.
