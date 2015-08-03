@@ -24,11 +24,11 @@ app.use(express.static(__dirname + '/public'));
 //   console.log('Database connection to flags is open...');
 // })
 
-console.log(flags.getRandom());
+console.log('Random: ', flags.buildQuestion());
 
 // Move this into a request handler.
 app.get('/api/flags', function(req, res) {
-  var getData = flags.getRandom();
+  var getData = flags.buildQuestion();
   console.log('HIT!');
   res.statusCode = 200;
   res.send(getData);
