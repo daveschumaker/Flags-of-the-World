@@ -6,12 +6,18 @@ angular.module('flags.services', [])
   var getRandom = function () {
     return $http({
       method: 'GET',
-      url: '/api/links'
+      url: '/api/flags'
     })
     .then(function (resp) {
+      console.log(resp.data);
       return resp.data;
     });
   };
+
+  var test = function() {
+    console.log('HI');
+  }
+
 
   // var addLink = function (link) {
   //   return $http({
@@ -22,7 +28,8 @@ angular.module('flags.services', [])
   // };
 
   return {
-    getRanomd: getRandom
+    getRandom: getRandom,
+    test: test
     // addLink: addLink
   };
   })
