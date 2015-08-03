@@ -1,8 +1,8 @@
 angular.module('flags.services', [])
 
 .factory('Flags', function ($http) {
-  // Your code here
 
+  // Get a random flag from our server.
   var getRandom = function () {
     return $http({
       method: 'GET',
@@ -14,22 +14,30 @@ angular.module('flags.services', [])
     });
   };
 
+  // Unnecessary test function
   var test = function() {
     console.log('HI');
   }
-
-
-  // var addLink = function (link) {
-  //   return $http({
-  //     method: 'POST',
-  //     url: '/api/links',
-  //     data: link
-  //   });
-  // };
 
   return {
     getRandom: getRandom,
     test: test
     // addLink: addLink
   };
-  })
+})
+// This service only exists to pass the score between multiple controllers
+// e.g., Flag Game and Game Over.
+.factory('Score', function() {
+  var Score = {
+    totalScore: 0
+  };
+
+  // Trying to increment points and pass between controllers but not working.
+  Score.point = function() {
+    console.log('Point!');
+    Score.totalScore++;
+  }
+
+  console.log('Total Score: ', Score.totalScore);
+  return Score;
+});

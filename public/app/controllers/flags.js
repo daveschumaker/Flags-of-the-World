@@ -1,6 +1,6 @@
 angular.module('flags.display', [])
 
-.controller('FlagController', function ($scope, $location, Flags) {
+.controller('FlagController', function ($scope, $location, Flags, Score) {
 
   // Hold the data we receive from server.
   $scope.data = {
@@ -36,9 +36,11 @@ angular.module('flags.display', [])
 
   $scope.checkAnswer = function(answer) {
     if (answer === $scope.data.country) {
-      alert('YOU WIN!');
       $scope.data.score++;
       $scope.data.round++;
+      Score.point();
+      alert('YOU WIN!');
+      console.log('Flags score: ', Score.totalScore);
     } else {
       alert('WRRRROOOOOOONNNG');
       $scope.data.round++;
