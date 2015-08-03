@@ -9,7 +9,7 @@ angular.module('flags.services', [])
       url: '/api/flags'
     })
     .then(function (resp) {
-      console.log(resp.data);
+      // console.log(resp.data);
       return resp.data;
     });
   };
