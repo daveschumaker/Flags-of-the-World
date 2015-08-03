@@ -3,3 +3,7 @@
 <p>{{data.country}}</p>
 
 <img src="{{data.flag_img}}">
+
+<div class="answers">
+  <p ng-repeat="answer in data.answers" ng-click="checkAnswer(answer)">{{ answer }}</p>
+</div>

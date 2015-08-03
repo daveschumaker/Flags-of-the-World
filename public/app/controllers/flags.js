@@ -1,18 +1,22 @@
 angular.module('flags.display', [])
 
 .controller('FlagController', function ($scope, Flags) {
-  // Your code here
 
+  // Hold the data we receive from server.
   $scope.data = {
     country: null,
     flag_img: null,
+    answers: null
   };
 
+  // Use services module to interface with server
+  // and send an API request to get a random flag.
   $scope.getFlag = function() {
     Flags.getRandom()
       .then(function(flag) {
         $scope.data.country = flag.country;
         $scope.data.flag_img = flag.flag_img;
+        $scope.data.answers = flag.answers;
         console.log($scope.data);
       })
       .catch(function(error) {
@@ -20,7 +24,14 @@ angular.module('flags.display', [])
       })
   }
 
-  $scope.getFlag();
+  $scope.checkAnswer = function(answer) {
+    if (answer === $scope.data.country) {
+      alert('YOU WIN!');
+    } else {
+      alert('WRRRROOOOOOONNNG');
+    }
+  }
 
-  // Get a random flag on page load.
+  // Immediately invoke the function on page load.
+  $scope.getFlag();
 });
