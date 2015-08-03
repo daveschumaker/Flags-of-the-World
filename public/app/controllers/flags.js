@@ -6,6 +6,7 @@ angular.module('flags.display', [])
   $scope.data = {
     score: 0,
     round: 0,
+    playedCountries: [],
     country: null,
     flag_img: null,
     answers: null
@@ -16,9 +17,16 @@ angular.module('flags.display', [])
   $scope.getFlag = function() {
     Flags.getRandom()
       .then(function(flag) {
-        $scope.data.country = flag.country;
-        $scope.data.flag_img = flag.flag_img;
-        $scope.data.answers = flag.answers;
+        if ($scope.data.playedCountries.indexOf(flag.country) === -1) {
+          $scope.data.playedCountries.push(flag.country);
+          $scope.data.country = flag.country;
+          $scope.data.flag_img = flag.flag_img;
+          $scope.data.answers = flag.answers;
+        } else {
+          // We already played this country... get a new country.
+          $scope.getFlag();
+        }
+
         // console.log($scope.data);
       })
       .catch(function(error) {
@@ -36,6 +44,7 @@ angular.module('flags.display', [])
       $scope.data.round++;
     }
     // No matter what happens, let's retrieve a new flag.
+    console.log('Played Countries', $scope.data.playedCountries);
     console.log('Score', $scope.data.score);
     console.log('Round', $scope.data.round);
     $scope.getFlag();
