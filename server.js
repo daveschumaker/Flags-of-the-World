@@ -29,13 +29,13 @@ console.log('Random: ', flags.buildQuestion());
 // Move this into a request handler.
 app.get('/api/flags', function(req, res) {
   var getData = flags.buildQuestion();
-  console.log('HIT!');
+  //console.log('HIT!');
   res.statusCode = 200;
   res.send(getData);
 })
 
 
 // Initialize server
-var port = 3000;
+var port = 3001;
 console.log('Server online and listening on port ' + port);
 app.listen(port);
