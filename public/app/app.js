@@ -1,17 +1,15 @@
-angular.module('app', ['ngRoute']);
-
-angular.module('app').config(function($routeProvider, $locationProvider) {
-  $locationProvider.html5Mode({
-    enabled: true,
-    requireBase: false
-  });
+angular.module('flags', [
+  'flags.display',
+  'flags.services',
+  'ngRoute'
+])
+.config(function($routeProvider, $httpProvider) {
   $routeProvider
     .when('/', {
-      templateUrl: '/partials/main',
-      controller: 'mainController'
+      templateUrl: 'app/views/flags.html',
+      controller: 'FlagController',
     })
-});
-
-angular.module('app').controller('mainController', function($scope) {
-  $scope.myVar = 'Hello, Angular!';
-});
+    .otherwise({
+      redirectTo: '/'
+    });
+})
