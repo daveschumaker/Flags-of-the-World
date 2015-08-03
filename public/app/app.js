@@ -1,5 +1,6 @@
 angular.module('flags', [
   'flags.display',
+  'flags.gameover',
   'flags.services',
   'ngRoute'
 ])
@@ -11,7 +12,7 @@ angular.module('flags', [
     })
     .when('/gameover', {
       templateUrl: 'app/views/gameover.html',
-      // controller: 'GameOver',
+      controller: 'GameOverController',
     })
     .otherwise({
       redirectTo: '/'

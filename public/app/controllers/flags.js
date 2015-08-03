@@ -1,6 +1,6 @@
 angular.module('flags.display', [])
 
-.controller('FlagController', function ($scope, Flags) {
+.controller('FlagController', function ($scope, $location, Flags) {
 
   // Hold the data we receive from server.
   $scope.data = {
@@ -49,7 +49,8 @@ angular.module('flags.display', [])
     console.log('Round', $scope.data.round);
     if ($scope.data.round > 10) {
       // TODO: Fix this routing
-      window.location = "#/gameover";
+      //window.location = "#/gameover";
+      $location.path('/gameover');
     } else {
       $scope.getFlag();
     }
