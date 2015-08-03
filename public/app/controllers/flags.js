@@ -39,10 +39,10 @@ angular.module('flags.display', [])
       $scope.data.score++;
       $scope.data.round++;
       Score.point();
-      alert('YOU WIN!');
+      alert('YOU ARE CORRECT!');
       console.log('Flags score: ', Score.totalScore);
     } else {
-      alert('WRRRROOOOOOONNNG');
+      alert('WRRRROOOOOOONNNG. That was ' + $scope.data.country);
       $scope.data.round++;
     }
     // No matter what happens, let's retrieve a new flag.
