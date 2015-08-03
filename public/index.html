@@ -1,25 +1,53 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="flags">
 <head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Flags of the World!</title>
+  <title>Flags of the World Quiz</title>
+  <meta name="description" content="">
+  <meta name="author" content="Dave Schumaker">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="vendor/toastr/toastr.css">
-  <style>
-  </style>
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
 </head>
 <body>
-  <h1>Flags of the World Quiz</h1>
 
-  <!-- page content -->
-  <!-- the ng-view directive is where our templates will be loaded into when naviagted to -->
-  <div ng-view></div>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="twelve.columns " style="margin-top: 25%">
+        <h4>Flags of the World Quiz</h4>
+        <div ng-view></div>
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="vendor/jquery/dist/jquery.min.js"></script>
   <script src="vendor/angular/angular.min.js"></script>
   <script src="vendor/angular-route/angular-route.min.js"></script>
   <script src="app/controllers/flags.js"></script>
   <script src="app/controllers/gameover.js"></script>
   <script src="app/controllers/services.js"></script>
-  <script src="app/app.js"></script>
+  <script src="app/app.js"></script>  
 </body>
 </html>
